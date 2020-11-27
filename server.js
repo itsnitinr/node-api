@@ -13,6 +13,7 @@ connectDB();
 
 // Route files
 const bootcamps = require('./routes/bootcamps.routes');
+const courses = require('./routes/courses.routes');
 
 const app = express();
 
@@ -26,6 +27,7 @@ if (process.env.NODE_ENV === 'development') {
 
 // Mount routers
 app.use('/api/v1/bootcamps', bootcamps);
+app.use('/api/v1/courses', courses);
 
 // Error handler
 app.use(errorHandler);
