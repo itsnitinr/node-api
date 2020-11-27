@@ -6,9 +6,10 @@ const {
   getCourse,
   addCourse,
   updateCourse,
+  deleteCourse,
 } = require('../controllers/courses.controllers');
 
 router.route('/').get(getCourses).post(addCourse);
-router.route('/:id').get(getCourse).put(updateCourse);
+router.route('/:id').get(getCourse).put(updateCourse).delete(deleteCourse);
 
 module.exports = router;
