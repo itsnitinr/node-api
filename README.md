@@ -8,7 +8,7 @@ Clone this repository and run the below command to install dependencies:
 npm install
 ```
 
-Edit the `config/config.example.env` file and add your own values. Once done, rename it to `config/condig.env`.
+Edit the `config/config.example.env` file and add your own values. Once done, rename it to `config/config.env`.
 
 ## Usage
 
